@@ -3,6 +3,6 @@ salesReports-appannie-
 
 Small script for getting last sales reports from AppAnnie
 
-Usage:
+Usage
 =====================
 Just insert your API key :)
