@@ -8,8 +8,8 @@ MY_API_KEY = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 def sales(appID, date):
     url = "https://api.appannie.com/v1/accounts/" + str(
         appID) + "/sales?break_down=application+date&start_date=" + date + "&end_date=" + date + "&currency=USD"
-    request = urllib2.Request(url)
-    request.add_header('Authorization', 'bearer ' + MY_API_KEY)
+    req = urllib2.Request(url)
+    req.add_header('Authorization', 'bearer ' + MY_API_KEY)
     resp = urllib2.urlopen(req)
     content = resp.read()
     response = json.loads(content)
